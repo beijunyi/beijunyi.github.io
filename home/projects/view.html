@@ -1,0 +1,26 @@
+<div class="jumbotron">
+  <h1>Jumbotron heading</h1>
+  <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+  <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+</div>
+<div class="row marketing" ng-repeat="project in projects">
+  <div class="col-lg-6">
+    <h4>{{project.name}}</h4>
+    <a class="btn btn-primary" ng-href="{{project.site}}"><i class="fa fa-home fa-lg"></i>Project Home</a>
+    <a class="btn btn-success" ng-href="{{project.source}}"><i class="fa fa-github fa-lg"></i>Source Code</a>
+  </div>
+  <div class="col-lg-6 tab-pre">
+    <tabset>
+      <tab heading="Maven">
+        <pre>{{project|dependency:'maven'}}</pre>
+      </tab>
+      <tab heading="Ivy">
+        <pre>{{project|dependency:'ivy'}}</pre>
+      </tab>
+      <tab heading="Gradle">
+        <pre>{{project|dependency:'gradle'}}</pre>
+      </tab>
+    </tabset>
+    <small class="pull-right">Latest version: {{project.version}}</small>
+  </div>
+</div>
