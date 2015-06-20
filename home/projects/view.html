@@ -1,11 +1,12 @@
-<div class="jumbotron">
-  <h1>Jumbotron heading</h1>
-  <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-  <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+<div class="jumbotron" ng-show="updates">
+  <h1>Project updates</h1>
+  <p class="lead">{{updates.content}}</p>
+  <p><a class="btn btn-lg btn-success" ng-href="{{updates.link}}">What is new?</a></p>
 </div>
 <div class="row marketing" ng-repeat="project in projects">
   <div class="col-lg-6">
     <h4>{{project.name}}</h4>
+    <p>{{project.description}}</p>
     <a class="btn btn-primary" ng-href="{{project.site}}"><i class="fa fa-home fa-lg"></i>Project Home</a>
     <a class="btn btn-success" ng-href="{{project.source}}"><i class="fa fa-github fa-lg"></i>Source Code</a>
   </div>

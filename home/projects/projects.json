@@ -1,11 +1,12 @@
 [
   {
     "name": "ParallelGit",
+    "description": "An elegant solution to applications that use git repository as data store.",
     "id": "parallelgit",
     "groupId": "com.beijunyi.parallelgit",
     "artifactId": "parallelgit",
     "version": "0.9.1",
     "source": "https://www.github.com/beijunyi/parallelgit",
-    "site": "parallelgit"
+    "site": "/parallelgit"
   }
 ]

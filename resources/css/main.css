@@ -13,6 +13,10 @@ a:hover {
 .container {
   max-width: 900px;
 }
+.container .jumbotron {
+  padding: 40px 30px;
+}
+
 
 .glyphicon,
 .fa {
