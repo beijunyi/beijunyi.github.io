@@ -1,0 +1,16 @@
+body {
+  padding-top: 50px;
+}
+
+#cv-main {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+[ng-cloak] {
+  display: none;
+}
+
+.dropdown {
+  cursor: pointer;
+}

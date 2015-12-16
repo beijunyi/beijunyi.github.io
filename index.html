@@ -1,6 +1,47 @@
 <!DOCTYPE html>
 <html>
-<body>
-  <h1>Welcome to bjy.im</h1>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body ng-app="cv" ng-cloak>
+<nav class="navbar navbar-inverse navbar-fixed-top" ng-controller="NavCtrl">
+  <div class="container">
+    <ul class="nav navbar-nav">
+      <li ng-repeat="page in pages" ng-class="{active: page.active()}">
+        <a ng-href="{{'#' + page.originalPath}}">
+          <i class="fa {{page.icon}}"></i>
+          <span>{{page.name}}</span>
+        </a>
+      </li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown" uib-dropdown>
+        <a id="language" class="dropdown-toggle" uib-dropdown-toggle>
+          {{languages[selectedLanguage]}} <span class="caret"></span>
+        </a>
+        <ul class="uib-dropdown-menu" role="menu" aria-labelledby="language">
+          <li role="menuitem" ng-repeat="(langKey, lang) in languages"><a ng-click="selectLanguage(langKey)">{{lang}}</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div ng-view></div>
+
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.8.1/angular-translate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-loader-static-files/2.8.1/angular-translate-loader-static-files.min.js"></script>
+<script src="app.js"></script>
+
 </html>
