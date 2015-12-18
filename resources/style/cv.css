@@ -2,9 +2,15 @@ body {
   padding-top: 50px;
 }
 
-#cv-nav-icon {
+#cv-nav-brand {
+  padding: 0 15px;
+}
+
+#cv-nav-brand>img {
   width: 50px;
   height: 50px;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 #cv-main {
@@ -19,7 +25,6 @@ body {
 .navbar-fixed-top {
   border: 0;
 }
-
 .dropdown {
   cursor: pointer;
 }
