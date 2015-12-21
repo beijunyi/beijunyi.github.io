@@ -1,25 +1,32 @@
-<div id="cv-nav" ng-class="{'nav-show': hoverNavZone}" ng-controller="NavCtrl">
+<div id="cv-nav" ng-class="{'nav-show': hoverNavZone}" ng-controller="NavCtrl" ng-mouseover="enableNavZone()">
   <nav class="navbar navbar-inverse navbar-fixed-top" ng-mouseover="enterNavZone()" ng-mouseleave="leaveNavZone()">
     <div class="container">
       <div class="navbar-header">
-        <a id="cv-nav-brand" class="navbar-brand" href="https://beijunyi.github.io"><img src="resources/icons/64x64.png">beijunyi.github.io</a>
+        <a id="cv-nav-brand" class="navbar-brand" href="https://beijunyi.github.io"><img src="resources/icons/icon_64x64.png">beijunyi.github.io</a>
       </div>
       <ul class="nav navbar-nav">
         <li ng-repeat="page in pages" ng-class="{active: page.isActive()}">
           <a ng-click="page.activate()">
-            <i class="fa {{page.icon}}"></i>
-            <span>{{page.name}}</span>
+            <span>
+              <span class="glyphicons glyphicons-{{page.icon}}"></span>
+              {{page.name}}
+            </span>
           </a>
         </li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <a ng-click="togglePrinterVersion()">Printer Friendly</a>
+          <a ng-click="togglePrinterVersion()" id="cv-printer-view">
+            <span class="glyphicons glyphicons-print"></span>
+            Print
+          </a>
         </li>
         <li class="dropdown" uib-dropdown>
           <a id="language" class="dropdown-toggle" uib-dropdown-toggle>
-            {{languages[selectedLanguage]}} <span class="caret"></span>
+            <span class="glyphicons glyphicons-globe-af"></span>
+            {{languages[selectedLanguage]}}
+            <span class="caret"></span>
           </a>
           <ul class="uib-dropdown-menu" role="menu" aria-labelledby="language">
             <li role="menuitem" ng-repeat="(langKey, lang) in languages"><a ng-click="selectLanguage(langKey)">{{lang}}</a></li>

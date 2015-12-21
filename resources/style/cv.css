@@ -24,7 +24,7 @@
 /* navbar */
 .navbar-fixed-top {
   border: 0;
-  transition: all 0.1s linear;
+  transition: all 0.2s linear;
 }
 .printer-view .navbar-fixed-top {
   margin-top: -50px;
@@ -32,7 +32,7 @@
 }
 .printer-view .nav-show .navbar-fixed-top {
   margin-top: 0;
-  opacity: 0.9;
+  opacity: 0.85;
 }
 #nav-placeholder {
   width: 100%;
@@ -50,6 +50,14 @@
 }
 .printer-view #nav-detect-enter {
   display: block;
+}
+.printer-view #cv-printer-view {
+  color: #fff;
+  background-color: #080808;
+}
+.navbar .glyphicons {
+  font-size: 30px;
+  margin: -6px 4px -6px 0;
 }
 .dropdown {
   cursor: pointer;

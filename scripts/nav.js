@@ -2,11 +2,13 @@ app.config(function($routeProvider) {
   $routeProvider
     .when('/', {
       templateUrl: 'partials/cv.html',
-      name: 'About me'
+      name: 'About me',
+      icon: 'person-running'
     })
     .when('/projects', {
       templateUrl: 'partials/projects.html',
-      name: 'Projects'
+      name: 'Projects',
+      icon: 'claw-hammer'
     })
     .otherwise({
       redirectTo: '/'
@@ -29,17 +31,24 @@ app.controller('NavCtrl', function($scope, $route, $location, $translate, Printe
     }
   });
 
+  $scope.navZone = PrinterService.isPrinterView();
+  $scope.hoverNavZone = false;
   $scope.togglePrinterVersion = function() {
+    $scope.navZone = false;
+    $scope.hoverNavZone = false;
     var state = !PrinterService.isPrinterView();
     PrinterService.setPrinterView(state);
   };
-
-  $scope.hoverNavZone = false;
+  $scope.enableNavZone = function() {
+    $scope.navZone = true;
+  };
   $scope.enterNavZone = function() {
-    $scope.hoverNavZone = true;
+    if($scope.navZone)
+      $scope.hoverNavZone = true;
   };
   $scope.leaveNavZone = function() {
-    $scope.hoverNavZone = false;
+    if($scope.navZone)
+      $scope.hoverNavZone = false;
   };
 
   $scope.languages = {
