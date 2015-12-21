@@ -1,24 +1,11 @@
-app = angular.module('cv', ['ngRoute', 'ui.bootstrap', 'pascalprecht.translate']);
-
-app.config(function($translateProvider) {
-  $translateProvider
-    .useStaticFilesLoader({prefix: 'i18n/', suffix: '.json'})
-    .registerAvailableLanguageKeys(['en', 'zh'], {
-      'en_*': 'en',
-      'zh_*': 'zh'
-    })
-    .determinePreferredLanguage()
-    .fallbackLanguage('en');
-});
-
 app.config(function($routeProvider) {
   $routeProvider
     .when('/', {
-      templateUrl: 'cv.html',
+      templateUrl: 'partials/cv.html',
       name: 'About me'
     })
     .when('/projects', {
-      templateUrl: 'projects.html',
+      templateUrl: 'partials/projects.html',
       name: 'Projects'
     })
     .otherwise({
@@ -26,25 +13,40 @@ app.config(function($routeProvider) {
     });
 });
 
-app.controller('NavCtrl', function($scope, $route, $location, $translate) {
+app.controller('NavCtrl', function($scope, $route, $location, $translate, PrinterService) {
 
   $scope.pages = [];
   angular.forEach($route.routes, function(route, path) {
     if(route.name != null) {
       $scope.pages.push(angular.extend({
-        active: function() {
+        isActive: function() {
           return path == $location.path();
+        },
+        activate: function() {
+          $location.path(path);
         }
       }, route))
     }
   });
+
+  $scope.togglePrinterVersion = function() {
+    var state = !PrinterService.isPrinterView();
+    PrinterService.setPrinterView(state);
+  };
+
+  $scope.hoverNavZone = false;
+  $scope.enterNavZone = function() {
+    $scope.hoverNavZone = true;
+  };
+  $scope.leaveNavZone = function() {
+    $scope.hoverNavZone = false;
+  };
 
   $scope.languages = {
     en: 'English',
     zh: 'Chinese'
   };
   $scope.selectedLanguage = $translate.use();
-
   $scope.selectLanguage = function(langKey) {
     $scope.selectedLanguage = langKey;
     $translate.use($scope.selectedLanguage);
