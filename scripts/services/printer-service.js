@@ -12,6 +12,7 @@ app.service('PrinterService', function($location) {
       hooks.push(fn);
     },
 
+
     isPrinterView: function() {
       return isPrinterView();
     },

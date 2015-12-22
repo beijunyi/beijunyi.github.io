@@ -9,16 +9,18 @@
   margin-right: 10px;
 }
 
-#cv-main {
-  text-align: center;
-}
-
 /* global */
+body {
+  background-color: #eeeeee;
+}
 [ng-cloak] {
   display: none;
 }
 [ng-click] {
   cursor: pointer;
+}
+.mono {
+  font-family: Consolas, monospace;
 }
 
 /* navbar */
@@ -61,4 +63,33 @@
 }
 .dropdown {
   cursor: pointer;
+}
+
+/* cv-section */
+.cv-section-brace {
+  font-size: 45px;
+  display: inline-block;
+  line-height: 50px;
+  letter-spacing: -1px;
+  color: #333;
+}
+.cv-section-title-text {
+  font-size: 25px;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 50px;
+}
+.cv-section-title-text-main {
+  margin-top: -15px;
+  color: #B87ACC;
+  margin-right: -8px;
+}
+.cv-section-title-text-decoration {
+  margin-top: -20px;
+  color: #7AB7CC;;
+}
+.cv-section-description {
+  padding-left: 20px;
+  color: #888;
+  letter-spacing: -0.2px;
 }
