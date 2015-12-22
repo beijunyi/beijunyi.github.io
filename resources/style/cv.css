@@ -65,6 +65,15 @@ body {
   cursor: pointer;
 }
 
+/* cv-main */
+#cv-main {
+  margin-top: 50px;
+}
+
+/* cv-header */
+.cv-header {
+}
+
 /* cv-section */
 .cv-section-brace {
   font-size: 45px;
@@ -92,4 +101,8 @@ body {
   padding-left: 20px;
   color: #888;
   letter-spacing: -0.2px;
+}
+
+#cv-left {
+  border-right: 1px solid red;
 }
