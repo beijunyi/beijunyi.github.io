@@ -7,7 +7,8 @@ app.directive('cvHeader', function() {
     restriction:'E',
     transclude: {
       'name': 'cvHeaderName',
-      'email': 'cvHeaderEmail'
+      'email': 'cvHeaderEmail',
+      'phone': 'cvHeaderPhone'
     },
     template:
       '<div class="cv-header">' +
@@ -15,6 +16,7 @@ app.directive('cvHeader', function() {
       '  /**\n' +
       '   * Author: <span ng-transclude="name"></span ng-transclude>\n' +
       '   * E-Mail: <span ng-transclude="email"></span ng-transclude>\n' +
+      '   * Phone: <span ng-transclude="phone"></span ng-transclude>\n' +
       '   */' +
       '  </pre>' +
       '</div>'

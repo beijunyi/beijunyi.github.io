@@ -22,6 +22,10 @@ body {
 .mono {
   font-family: Consolas, monospace;
 }
+.sneaky {
+  color: transparent;
+  letter-spacing: -7px;
+}
 
 /* navbar */
 .navbar-fixed-top {
@@ -45,6 +49,7 @@ body {
   height: 0;
 }
 #nav-detect-enter {
+  top: 0;
   position: fixed;
   width: 100%;
   height: 50px;

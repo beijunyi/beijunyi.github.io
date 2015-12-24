@@ -1,11 +1,15 @@
-<div id="cv-main">
+<div id="cv-main" ng-controller="CvCtrl">
   <div class="container">
     <div class="row">
       <div id="cv-left" class="col-xs-12 col-md-5">
         <div id="cv-contacts">
           <cv-header>
             <cv-header-name>Junyi Bei</cv-header-name>
-            <cv-header-email>beijunyi+cv@gmail.com</cv-header-email>
+            <cv-header-email>beijunyi<span class="sneaky">+cv</span>@gmail.com</cv-header-email>
+            <cv-header-phone ng-switch="phone != null" style="white-space: normal">
+              <span ng-switch-when="true">{{phone | decode: 885602322}}</span>
+              <span ng-switch-default class="text-danger"><em>Please obtain via E-Mail</em></span>
+            </cv-header-phone>
           </cv-header>
         </div>
         <div id="cv-education">
@@ -24,11 +28,19 @@
         </div>
       </div>
       <div id="cv-right" class="col-xs-12 col-md-7">
-        <div id="cv-experience">
-          experience
+        <div id="cv-experiences">
+          <cv-section>
+            <cv-section-title>getWorkExperiences</cv-section-title>
+            <cv-section-description></cv-section-description>
+            <cv-section-body></cv-section-body>
+          </cv-section>
         </div>
         <div id="cv-hobbies">
-          hobbies
+          <cv-section>
+            <cv-section-title>getHobbies</cv-section-title>
+            <cv-section-description></cv-section-description>
+            <cv-section-body></cv-section-body>
+          </cv-section>
         </div>
       </div>
     </div>
