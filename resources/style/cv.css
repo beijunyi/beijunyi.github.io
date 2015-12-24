@@ -114,5 +114,10 @@ pre {
 }
 
 #cv-left {
-  border-right: 1px solid red;
+  border-right: 5px solid #ccc;
+  padding-right: 35px;
+}
+
+#cv-right {
+  padding-left: 30px;
 }
