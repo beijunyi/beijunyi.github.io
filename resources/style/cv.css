@@ -13,6 +13,9 @@
 body {
   background-color: #eeeeee;
 }
+pre {
+  color: inherit;
+}
 [ng-cloak] {
   display: none;
 }
@@ -75,8 +78,10 @@ body {
   margin-top: 50px;
 }
 
-/* cv-header */
-.cv-header {
+/* cv-contacts */
+#cv-contacts {
+  color: #258527;
+  font-weight: 600;
 }
 
 /* cv-section */
