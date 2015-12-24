@@ -7,8 +7,8 @@
             <cv-header-name>Junyi Bei</cv-header-name>
             <cv-header-email>beijunyi<span class="sneaky">+cv</span>@gmail.com</cv-header-email>
             <cv-header-phone ng-switch="phone != null" style="white-space: normal">
-              <span ng-switch-when="true">{{phone | decode: 885602322}}</span>
-              <span ng-switch-default class="text-danger"><em>Please obtain via E-Mail</em></span>
+              <span ng-switch-when="true">{{phone | decode: secretHash}}</span>
+              <a ng-switch-default class="text-danger" ng-click="revealSecret()"><em>Please obtain the secret via E-Mail</em></a>
             </cv-header-phone>
           </cv-header>
         </div>
