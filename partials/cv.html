@@ -7,7 +7,7 @@
             <cv-header-name>Junyi Bei</cv-header-name>
             <cv-header-email>beijunyi<span class="sneaky">+cv</span>@gmail.com</cv-header-email>
             <cv-header-phone ng-switch="phone != null" style="white-space: normal">
-              <span ng-switch-when="true">{{phone | decode: secretHash}}</span>
+              <span ng-switch-when="true">{{phone | decode | phone | hash : secretHash : '(checksum error)'}}</span>
               <a ng-switch-default class="text-danger" ng-click="revealSecret()"><em>Please obtain the secret via E-Mail</em></a>
             </cv-header-phone>
           </cv-header>
@@ -16,13 +16,15 @@
           <cv-section>
             <cv-section-title>getEducation</cv-section-title>
             <cv-section-description>Schools I have been to</cv-section-description>
-            <cv-section-body></cv-section-body>
+            <cv-section-body>
+
+            </cv-section-body>
           </cv-section>
         </div>
         <div id="cv-skills">
           <cv-section>
             <cv-section-title>getSkills</cv-section-title>
-            <cv-section-description>The stuff I do</cv-section-description>
+            <cv-section-description>Stuff I do</cv-section-description>
             <cv-section-body></cv-section-body>
           </cv-section>
         </div>
@@ -32,6 +34,13 @@
           <cv-section>
             <cv-section-title>getWorkExperiences</cv-section-title>
             <cv-section-description>Stuff I have done</cv-section-description>
+            <cv-section-body></cv-section-body>
+          </cv-section>
+        </div>
+        <div id="cv-projects">
+          <cv-section>
+            <cv-section-title>getSideProjects</cv-section-title>
+            <cv-section-description>Because I can</cv-section-description>
             <cv-section-body></cv-section-body>
           </cv-section>
         </div>
