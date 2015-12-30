@@ -13,13 +13,16 @@
 
 <body ng-app="cv" ng-cloak ng-class="{'printer-view': printerView}" ng-controller="AppCtrl">
   <ng-include src="'partials/nav.html'"></ng-include>
-  <ng-view id="cv-view"></ng-view>
+  <div class="container">
+    <ng-view id="cv-view"></ng-view>
+  </div>
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.0/angular.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.0/angular-route.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.min.js"></script>
 <script src="scripts/app.js"></script>
 <script src="scripts/cv.js"></script>
 <script src="scripts/nav.js"></script>

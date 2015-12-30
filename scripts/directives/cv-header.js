@@ -1,7 +1,3 @@
-/**
- *
- */
-
 app.directive('cvHeader', function() {
   return {
     restriction:'E',
@@ -12,7 +8,7 @@ app.directive('cvHeader', function() {
     },
     template:
       '<div class="cv-header">' +
-      '  <pre>' +
+      '  <pre class="mono">' +
       '  /**\n' +
       '   * Author: <span ng-transclude="name"></span ng-transclude>\n' +
       '   * E-Mail: <span ng-transclude="email"></span ng-transclude>\n' +

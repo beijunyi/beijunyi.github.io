@@ -12,6 +12,7 @@
 /* global */
 body {
   background-color: #eeeeee;
+  font-family: Helvetica, Arial, sans-serif;
 }
 pre {
   color: inherit;
@@ -78,7 +79,8 @@ pre {
 
 /* cv-main */
 #cv-main {
-  margin-top: 50px;
+  padding: 70px 50px;
+  background: #ffffff;
 }
 
 /* cv-contacts */
@@ -124,7 +126,7 @@ pre {
   font-family: 'Glyphicons Regular', monospace;
   font-size: 24px;
   float: left;
-  margin-top: -9px;
+  margin-top: -10px;
   margin-left: -24px;
   color: #CCCCCC;
 }
@@ -134,10 +136,6 @@ pre {
 }
 
 /* cv-left */
-#cv-left {
-  border-right: 5px solid #ccc;
-  padding-right: 35px;
-}
 #cv-education li:before {
   content: "\e501";
 }
@@ -145,12 +143,20 @@ pre {
   content: "\e281";
 }
 
-#cv-right {
-  padding-left: 30px;
-}
 #cv-experiences li:before {
   content: "\e621";
 }
 #cv-projects li:before {
   content: "\e733";
 }
+
+
+#cv-separator:before {
+  content: "";
+  display: block;
+  margin: 100px auto;
+  width: 3px;
+  height: 1200px;
+  background: #cccccc;
+}
+
