@@ -22,16 +22,6 @@
             Print
           </a>
         </li>
-        <li class="dropdown" uib-dropdown>
-          <a id="language" class="dropdown-toggle" uib-dropdown-toggle>
-            <span class="glyphicons glyphicons-globe-af"></span>
-            {{languages[selectedLanguage]}}
-            <span class="caret"></span>
-          </a>
-          <ul class="uib-dropdown-menu" role="menu" aria-labelledby="language">
-            <li role="menuitem" ng-repeat="(langKey, lang) in languages"><a ng-click="selectLanguage(langKey)">{{lang}}</a></li>
-          </ul>
-        </li>
       </ul>
     </div>
   </nav>

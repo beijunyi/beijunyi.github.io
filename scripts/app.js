@@ -1,4 +1,4 @@
-app = angular.module('cv', ['ngRoute', 'ui.bootstrap', 'pascalprecht.translate']);
+app = angular.module('cv', ['ngRoute', 'ui.bootstrap']);
 
 app.controller('AppCtrl', function($scope, PrinterService) {
 
@@ -6,15 +6,4 @@ app.controller('AppCtrl', function($scope, PrinterService) {
     $scope.printerView = state;
   });
 
-});
-
-app.config(function($translateProvider) {
-  $translateProvider
-    .useStaticFilesLoader({prefix: 'i18n/', suffix: '.json'})
-    .registerAvailableLanguageKeys(['en', 'zh'], {
-      'en_*': 'en',
-      'zh_*': 'zh'
-    })
-    .determinePreferredLanguage()
-    .fallbackLanguage('en');
 });

@@ -15,7 +15,7 @@ app.config(function($routeProvider) {
     });
 });
 
-app.controller('NavCtrl', function($scope, $route, $location, $translate, PrinterService) {
+app.controller('NavCtrl', function($scope, $route, $location, PrinterService) {
 
   $scope.pages = [];
   angular.forEach($route.routes, function(route, path) {
@@ -50,15 +50,5 @@ app.controller('NavCtrl', function($scope, $route, $location, $translate, Printe
     if($scope.navZone)
       $scope.hoverNavZone = false;
   };
-
-  $scope.languages = {
-    en: 'English',
-    zh: 'Chinese'
-  };
-  $scope.selectedLanguage = $translate.use();
-  $scope.selectLanguage = function(langKey) {
-    $scope.selectedLanguage = langKey;
-    $translate.use($scope.selectedLanguage);
-  }
 
 });
