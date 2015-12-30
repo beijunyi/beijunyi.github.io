@@ -9,11 +9,9 @@ app.controller('CvCtrl', function($scope, $filter, $route, $location, $uibModal)
       controller: function ($scope, $uibModalInstance) {
         $scope.retry = !!retry;
         $scope.number = '';
-
         $scope.ok = function() {
           $uibModalInstance.close($scope.number);
         };
-
         $scope.cancel = function() {
           $uibModalInstance.dismiss();
         };
