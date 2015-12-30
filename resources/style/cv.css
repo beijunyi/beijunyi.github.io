@@ -22,6 +22,9 @@ pre {
 [ng-click] {
   cursor: pointer;
 }
+.glyphicons:before {
+  padding: 0;
+}
 .mono {
   font-family: Consolas, monospace;
 }
@@ -112,12 +115,42 @@ pre {
   color: #888;
   letter-spacing: -0.2px;
 }
+.cv-section li {
+  display: block;
+  font-size: 16px;
+}
 
+.cv-section li:before {
+  font-family: 'Glyphicons Regular', monospace;
+  font-size: 24px;
+  float: left;
+  margin-top: -9px;
+  margin-left: -24px;
+  color: #CCCCCC;
+}
+
+.cv-section li>h4 {
+  margin-left: 10px;
+}
+
+/* cv-left */
 #cv-left {
   border-right: 5px solid #ccc;
   padding-right: 35px;
 }
+#cv-education li:before {
+  content: "\e501";
+}
+#cv-skills li:before {
+  content: "\e281";
+}
 
 #cv-right {
   padding-left: 30px;
+}
+#cv-experiences li:before {
+  content: "\e621";
+}
+#cv-projects li:before {
+  content: "\e733";
 }
