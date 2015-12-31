@@ -15,7 +15,7 @@ app.config(function($routeProvider) {
     });
 });
 
-app.controller('NavCtrl', function($scope, $route, $location) {
+app.controller('NavCtrl', function($scope, $route, $location, PrinterService) {
 
   $scope.pages = [];
   angular.forEach($route.routes, function(route, path) {
@@ -31,28 +31,17 @@ app.controller('NavCtrl', function($scope, $route, $location) {
     }
   });
 
-  //$scope.navZone = PrinterService.isPrinterView();
-  //$scope.hoverNavZone = false;
+  $scope.hoverNavZone = false;
   $scope.togglePrinterVersion = function() {
-    //$scope.navZone = false;
-    //$scope.hoverNavZone = false;
-    //var state = !PrinterService.isPrinterView();
-    //PrinterService.setPrinterView(state);
-    var pdf = new jsPDF('p','pt','a4');
-    pdf.addHTML(document.querySelector('#cv-main'), function() {
-      pdf.save('download.pdf');
-    });
+    $scope.hoverNavZone = false;
+    var state = !PrinterService.isPrinterView();
+    PrinterService.print(state);
   };
-  //$scope.enableNavZone = function() {
-  //  $scope.navZone = true;
-  //};
-  //$scope.enterNavZone = function() {
-  //  if($scope.navZone)
-  //    $scope.hoverNavZone = true;
-  //};
-  //$scope.leaveNavZone = function() {
-  //  if($scope.navZone)
-  //    $scope.hoverNavZone = false;
-  //};
+  $scope.enterNavZone = function() {
+    $scope.hoverNavZone = true;
+  };
+  $scope.leaveNavZone = function() {
+    $scope.hoverNavZone = false;
+  };
 
 });

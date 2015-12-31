@@ -1,4 +1,4 @@
-app.service('PrinterService', function($location) {
+app.service('PrinterService', function($location, $timeout, $window) {
 
   var hooks = [];
 
@@ -17,11 +17,17 @@ app.service('PrinterService', function($location) {
       return isPrinterView();
     },
 
-    setPrinterView: function(state) {
+    print: function(state) {
       angular.forEach(hooks, function(fn) {
         fn(state);
       });
       $location.search('printer', state ? 'yes' : null);
+      if(state) {
+        $timeout(function() {
+          $window.print();
+        });
+      }
     }
   }
+
 });

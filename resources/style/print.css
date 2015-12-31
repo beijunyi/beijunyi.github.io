@@ -1,0 +1,12 @@
+@page {
+  size: 1170px 1612px;
+  margin: 0;
+}
+
+.container {
+  width: 1170px;
+}
+
+#cv-nav {
+  display: none;
+}

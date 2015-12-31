@@ -156,7 +156,7 @@ pre {
   display: block;
   margin: 100px auto;
   width: 3px;
-  height: 1200px;
-  background: #cccccc;
+  height: 1250px;
+  border: 2px solid #cccccc;
 }
 

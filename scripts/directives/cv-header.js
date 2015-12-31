@@ -10,9 +10,9 @@ app.directive('cvHeader', function() {
       '<div class="cv-header">' +
       '  <pre class="mono">' +
       '  /**\n' +
-      '   * Author: <span ng-transclude="name"></span ng-transclude>\n' +
-      '   * E-Mail: <span ng-transclude="email"></span ng-transclude>\n' +
-      '   * Phone: <span ng-transclude="phone"></span ng-transclude>\n' +
+      '   * Author: <span ng-transclude="name"></span>\n' +
+      '   * E-Mail: <span ng-transclude="email"></span>\n' +
+      '   * Phone: <span ng-transclude="phone"></span>\n' +
       '   */' +
       '  </pre>' +
       '</div>'
