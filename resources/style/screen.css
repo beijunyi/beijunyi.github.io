@@ -13,6 +13,7 @@
 body {
   background-color: #eeeeee;
   font-family: Helvetica, Arial, sans-serif;
+  overflow-y: scroll;
 }
 pre {
   color: inherit;
