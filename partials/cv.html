@@ -1,14 +1,15 @@
 <div id="cv-main" ng-controller="CvCtrl">
   <div class="row">
-      <div id="cv-left" class="col-xs-5">
+      <div id="cv-left">
         <div id="cv-contacts">
           <cv-header>
             <cv-header-name>Junyi Bei</cv-header-name>
             <cv-header-email>beijunyi<span class="sneaky">+cv</span>@gmail.com</cv-header-email>
             <cv-header-phone ng-switch="phone != null" style="white-space: normal">
               <span ng-switch-when="true">{{phone | decode | phone | hash : secretHash : '(checksum error)'}}</span>
-              <a ng-switch-default class="text-danger" ng-click="revealSecret()"><em>Please obtain the secret via E-Mail</em></a>
+              <a ng-switch-default class="text-danger" ng-click="revealSecret()"><em>Please contact via E-Mail</em></a>
             </cv-header-phone>
+            <cv-header-description>The profile of a London based SWE.</cv-header-description>
           </cv-header>
         </div>
         <div id="cv-education">
@@ -17,8 +18,21 @@
             <cv-section-description>Schools I have been to</cv-section-description>
             <cv-section-body>
               <ul>
-                <li><h4>Imperial College London</h4></li>
-                <li><h4>Queen Ethelburga's College</h4></li>
+                <li>
+                  <h4>Imperial College London (2008-2012)</h4>
+                  <p>
+                    MEng <strong>high 2-1</strong> honoured degree<br/>
+                    <strong>1st</strong> in final year project: BPMP, a compiler that converts business process models into propositional logic for validation and optimisation.
+                  </p>
+                </li>
+                <li>
+                  <h4>Queen Ethelburga's College (2006-2007)</h4>
+                  <p>
+                    GCE A-Level<br/>
+                    <strong>A+</strong> in Math, Further Math and Physics<br/>
+                    <strong>A</strong> in Accounting
+                  </p>
+                </li>
               </ul>
             </cv-section-body>
           </cv-section>
@@ -29,17 +43,63 @@
             <cv-section-description>Stuff I do</cv-section-description>
             <cv-section-body>
               <ul>
-                <li><h4>Java</h4></li>
-                <li><h4>JavaScript</h4></li>
-                <li><h4>HTML & CSS</h4></li>
+                <li>
+                  <h4>Back End</h4>
+                  <p>
+                    <span class="badge">Java</span>
+                    <span class="badge">JSP</span>
+                    <span class="badge">Spring Framework</span>
+                    <span class="badge">Spring Security</span>
+                    <span class="badge">Hibernate</span>
+                    <span class="badge">Elasticsearch</span>
+                    <span class="badge">RESTful</span>
+                  </p>
+                </li>
+                <li>
+                  <h4>Front End</h4>
+                  <p>
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">HTML</span>
+                    <span class="badge">CSS</span>
+                    <span class="badge">AngularJS</span>
+                    <span class="badge">Bootstrap</span>
+                    <span class="badge">JQuery</span>
+                    <span class="badge">ExtJS</span>
+                  </p>
+                </li>
+                <li>
+                  <h4>Concepts & Processes</h4>
+                  <p>
+                    <span class="badge">Agile Programming</span>
+                    <span class="badge">Test Driven Development</span>
+                    <span class="badge">Reverse Engineering</span>
+                    <span class="badge">Data Structures</span>
+                    <span class="badge">Algorithms</span>
+                  </p>
+                </li>
+                <li>
+                  <h4>Others</h4>
+                  <p>
+                    <span class="badge">Git</span>
+                    <span class="badge">Maven</span>
+                    <span class="badge">SQL</span>
+                    <span class="badge">XML</span>
+                    <span class="badge">Tomcat</span>
+                    <span class="badge">Jetty</span>
+                    <span class="badge">Apache</span>
+                    <span class="badge">Windows</span>
+                    <span class="badge">Linux</span>
+                    <span class="badge">MS Paint</span>
+                  </p>
+                </li>
               </ul>
             </cv-section-body>
           </cv-section>
         </div>
       </div>
-      <div id="cv-separator" class="col-xs-1">
+      <div id="cv-separator">
       </div>
-      <div id="cv-right" class="col-xs-6">
+      <div id="cv-right">
         <div id="cv-experiences">
           <cv-section>
             <cv-section-title>getWorkExperiences</cv-section-title>
@@ -58,7 +118,10 @@
             <cv-section-description>Because I can</cv-section-description>
             <cv-section-body>
               <ul>
-                <li><h4>ParallelGit</h4></li>
+                <li>
+                  <h4>ParallelGit</h4>
+                  <p>High performance NIO in memory file system for Git based Java application.</p>
+                </li>
               </ul>
             </cv-section-body>
           </cv-section>
