@@ -43,6 +43,22 @@ pre .sneaky {
 .mono {
   font-family: Consolas, monospace;
 }
+.badge-blue {
+  background-color: #D8E6EB;
+  color: #6A97A6;
+}
+.badge-green {
+  background-color: #DAEDDE;
+  color: #6AA675;
+}
+.badge-orange {
+  background-color: #F7E3D5;
+  color: #E09763;
+}
+.badge-purple {
+  background-color: #EFCEF5;
+  color: #B071BD;
+}
 
 
 /* navbar */
