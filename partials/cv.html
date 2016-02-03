@@ -17,16 +17,16 @@
             <cv-section-title>getEducation</cv-section-title>
             <cv-section-description>Schools I have been to</cv-section-description>
             <cv-section-body>
-              <ul>
+              <ul class="cv-section-list-major">
                 <li>
-                  <h4>Imperial College London (2008-2012)</h4>
+                  <h4>2008 - 2012<br/>Imperial College, London</h4>
                   <p>
                     MEng <strong>high 2-1</strong> honoured degree<br/>
                     <strong>1st</strong> in final year project: BPMP, a compiler that converts business process models into propositional logic for validation and optimisation.
                   </p>
                 </li>
                 <li>
-                  <h4>Queen Ethelburga's College (2006-2007)</h4>
+                  <h4>2006 - 2008<br/>Queen Ethelburga's College, York</h4>
                   <p>
                     GCE A-Level<br/>
                     <strong>A+</strong> in Math, Further Math and Physics<br/>
@@ -40,35 +40,37 @@
         <div id="cv-skills">
           <cv-section>
             <cv-section-title>getSkills</cv-section-title>
-            <cv-section-description>Stuff I do</cv-section-description>
+            <cv-section-description>Tools I use</cv-section-description>
             <cv-section-body>
-              <ul>
+              <ul class="cv-section-list-major">
                 <li>
-                  <h4>Back End</h4>
+                  <h4>Server Side Technologies</h4>
                   <p>
-                    <span class="badge badge-orange">Java</span>
-                    <span class="badge badge-orange">JSP</span>
-                    <span class="badge badge-orange">Spring Framework</span>
-                    <span class="badge badge-orange">Spring Security</span>
-                    <span class="badge badge-orange">Hibernate</span>
-                    <span class="badge badge-orange">Elasticsearch</span>
-                    <span class="badge badge-orange">RESTful</span>
+                    <span class="badge badge-blue">Java</span>
+                    <span class="badge badge-blue">JSP</span>
+                    <span class="badge badge-blue">Spring Framework</span>
+                    <span class="badge badge-blue">Spring Security</span>
+                    <span class="badge badge-blue">Guice</span>
+                    <span class="badge badge-blue">NodeJS</span>
+                    <span class="badge badge-blue">Hibernate</span>
+                    <span class="badge badge-blue">Elasticsearch</span>
+                    <span class="badge badge-blue">RESTful</span>
                   </p>
                 </li>
                 <li>
-                  <h4>Front End</h4>
+                  <h4>Web Technologies</h4>
                   <p>
-                    <span class="badge badge-purple">JavaScript</span>
-                    <span class="badge badge-purple">HTML</span>
-                    <span class="badge badge-purple">CSS</span>
-                    <span class="badge badge-purple">AngularJS</span>
-                    <span class="badge badge-purple">Bootstrap</span>
-                    <span class="badge badge-purple">JQuery</span>
-                    <span class="badge badge-purple">ExtJS</span>
+                    <span class="badge badge-green">JavaScript</span>
+                    <span class="badge badge-green">HTML</span>
+                    <span class="badge badge-green">CSS</span>
+                    <span class="badge badge-green">AngularJS</span>
+                    <span class="badge badge-green">Bootstrap</span>
+                    <span class="badge badge-green">JQuery</span>
+                    <span class="badge badge-green">ExtJS</span>
                   </p>
                 </li>
                 <li>
-                  <h4>Concepts & Processes</h4>
+                  <h4>Software Development Concepts</h4>
                   <p>
                     <span class="badge badge-blue">Agile Programming</span>
                     <span class="badge badge-blue">Test Driven Development</span>
@@ -78,18 +80,55 @@
                   </p>
                 </li>
                 <li>
-                  <h4>Others</h4>
+                  <h4>Tools</h4>
                   <p>
                     <span class="badge badge-green">Git</span>
                     <span class="badge badge-green">Maven</span>
-                    <span class="badge badge-green">SQL</span>
-                    <span class="badge badge-green">XML</span>
+                    <span class="badge badge-green">MySQL</span>
+                    <span class="badge badge-green">MongoDB</span>
                     <span class="badge badge-green">Tomcat</span>
                     <span class="badge badge-green">Jetty</span>
                     <span class="badge badge-green">Apache</span>
                     <span class="badge badge-green">Windows</span>
                     <span class="badge badge-green">Linux</span>
                     <span class="badge badge-green">MS Paint</span>
+                  </p>
+                </li>
+                <li>
+                  <h4>Human Languages</h4>
+                  <p>
+                    <span class="badge badge-blue">English</span>
+                    <span class="badge badge-blue">Chinese Mandarin</span>
+                    <span class="badge badge-blue">Chinese Cantonese</span>
+                  </p>
+                </li>
+              </ul>
+            </cv-section-body>
+          </cv-section>
+        </div>
+        <div id="cv-hobbies">
+          <cv-section>
+            <cv-section-title>getHobbies</cv-section-title>
+            <cv-section-description>Stuff that I don't do well enough to get paid for</cv-section-description>
+            <cv-section-body>
+              <ul class="cv-section-list-major">
+                <li>
+                  <h4>Competitive</h4>
+                  <p>
+                    <span class="badge badge-purple">Dota</span>
+                    <span class="badge badge-purple">StarCraft</span>
+                    <span class="badge badge-purple">Basketball</span>
+                    <span class="badge badge-purple">Table Tennis</span>
+                    <span class="badge badge-purple">Chess</span>
+                    <span class="badge badge-purple">Various Types of Poker Games</span>
+                  </p>
+                </li>
+                <li>
+                  <h4>Relaxing</h4>
+                  <p>
+                    <span class="badge badge-orange">PC Modding & Overclocking</span>
+                    <span class="badge badge-orange">Website & Blog Design</span>
+                    <span class="badge badge-orange">Writing Bots for Games</span>
                   </p>
                 </li>
               </ul>
@@ -103,11 +142,43 @@
         <div id="cv-experiences">
           <cv-section>
             <cv-section-title>getWorkExperiences</cv-section-title>
-            <cv-section-description>Stuff I have done</cv-section-description>
+            <cv-section-description>Stuff I do during the daytime</cv-section-description>
             <cv-section-body>
-              <ul>
-                <li><h4>Reformx</h4></li>
-                <li><h4>CalMon</h4></li>
+              <ul class="cv-section-list-major">
+                <li>
+                  <h4>2013 - Present<br/>Formicary Reformx<small> - <i>Change and release management tool for Murex</i></small></h4>
+                  <p>
+                    <span class="badge badge-green">Revision Control</span>
+                    <span class="badge badge-green">Issue Tracking</span>
+                    <span class="badge badge-green">Semantic Analysis</span>
+                    <span class="badge badge-green">Remote Deploy</span>
+                  </p>
+                  <ul class="cv-section-list-minor">
+                    <li>Led many performance related refactorings</li>
+                    <li>Designed the dependency check module to verify user inputs and build integrity</li>
+                    <li>Redesigned the analysis cache module, increased the average hit ratio from 20% to >90%</li>
+                    <li>Redesigned the format transformation module, shortened the average deployment time by >90%</li>
+                    <li>Optimised the content merging module, reduced the average merge duration by >90%</li>
+                    <li>Optimised the search module, reduced the average index size usage by >80%</li>
+                    <li>Web interface development (AngularJS + Bootstrap)</li>
+                  </ul>
+                  <p><small><i>(Visit <a href="http://www.formicary.net/software/reformx">http://www.formicary.net/software/reformx</a> for more details)</i></small></p>
+                </li>
+                <li>
+                  <h4>2012 - 2013<br/>Formicary CalMon<small> - <i>Health and performance monitoring tool for Calypso</i></small></h4>
+                  <p>
+                    <span class="badge badge-blue">Real Time Monitoring</span>
+                    <span class="badge badge-blue">Performance Tracking</span>
+                    <span class="badge badge-blue">Health Risk Assessment</span>
+                  </p>
+                  <ul class="cv-section-list-minor">
+                    <li>Designed the health monitoring module which aggregates multiple metrics to forecast system downtime</li>
+                    <li>Redesigned the notification module to support user defined thresholds</li>
+                    <li>Optimised the search module for more accurate system log and stacktrace searching</li>
+                    <li>Web interface development (ExtJS)</li>
+                  </ul>
+                  <p><small><i>(Visit <a href="http://www.formicary.net/software/calmon">http://www.formicary.net/software/calmon</a> for more details)</i></small></p>
+                </li>
               </ul>
             </cv-section-body>
           </cv-section>
@@ -115,22 +186,34 @@
         <div id="cv-projects">
           <cv-section>
             <cv-section-title>getSideProjects</cv-section-title>
-            <cv-section-description>Because I can</cv-section-description>
+            <cv-section-description>Stuff I do at nights</cv-section-description>
             <cv-section-body>
-              <ul>
+              <ul class="cv-section-list-major">
                 <li>
-                  <h4>ParallelGit</h4>
-                  <p>High performance NIO in memory file system for Git based Java application.</p>
+                  <h4>2013 - Present<br/>ParallelGit<small> - <i>High performance in memory file system for Git</i></small></h4>
+                  <ul class="cv-section-list-minor">
+                    <li>Implementation of Java NIO.2 FileSystem</li>
+                    <li>Instantly checking out an arbitrary commit from Git repository</li>
+                    <li>Committing file changes directly from memory to Git repository</li>
+                    <li>Merging and resolving conflicts in memory</li>
+                    <li>Simultaneously serving multiple sessions taking I/O requests from multiple streams</li>
+                    <li>Used by many web based revision control systems including <strong>Formicary Reformx</strong></li>
+                  </ul>
+                  <p><small><i>(Visit <a href="https://www.github.com/beijunyi/parallelgit">https://www.github.com/beijunyi/parallelgit</a> for more details)</i></small></p>
+                </li>
+                <li>
+                  <h4>2009 - 2010<br/>Archangel Online<small> - <i>Self owned MMORPG game</i></small></h4>
+                  <ul class="cv-section-list-minor">
+                    <li>Forked from the source code of <a href="https://zh.wikipedia.org/wiki/%E7%9F%B3%E5%99%A8%E6%97%B6%E4%BB%A3_(%E6%B8%B8%E6%88%8F)">StoneAge Online</a></li>
+                    <li>Optimised the thread management component, increased maximum served players from 600 to >2000 (Intel Duo @ 2.4Ghz)</li>
+                    <li>Re-balanced the battle and reward system</li>
+                    <li>Designed 2 major story lines with >30 side missions</li>
+                    <li>Attracted >8000 registered accounts (average evening head count >500)</li>
+                    <li>Business acquired by <a href="http://sa.cins.cn">cins.cn</a> in 2010. The battle system and the story lines are being used today.</li>
+                  </ul>
                 </li>
               </ul>
             </cv-section-body>
-          </cv-section>
-        </div>
-        <div id="cv-hobbies">
-          <cv-section>
-            <cv-section-title>getHobbies</cv-section-title>
-            <cv-section-description>Stuff I enjoy doing for free</cv-section-description>
-            <cv-section-body></cv-section-body>
           </cv-section>
         </div>
       </div>

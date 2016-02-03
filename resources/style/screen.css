@@ -24,6 +24,12 @@ pre .sneaky {
   color: transparent;
   letter-spacing: -9px;
 }
+p {
+  font-size: 15px;
+}
+small {
+  font-size: 13px;
+}
 [ng-cloak] {
   display: none;
 }
@@ -150,14 +156,14 @@ pre .sneaky {
   color: #888;
   letter-spacing: -0.2px;
 }
-.cv-section li {
+ul.cv-section-list-major>li {
   display: block;
   font-size: 16px;
 }
-.cv-section li:not(:last-child) {
-  margin-bottom: 20px;
+ul.cv-section-list-major>li:not(:last-child) {
+  margin-bottom: 25px;
 }
-.cv-section li:before {
+ul.cv-section-list-major>li:before {
   font-family: 'Glyphicons Regular', monospace;
   font-size: 24px;
   float: left;
@@ -165,23 +171,35 @@ pre .sneaky {
   margin-left: -24px;
   color: #CCCCCC;
 }
-.cv-section li>h4 {
+ul.cv-section-list-major>li>h4 {
   margin-left: 10px;
   margin-bottom: 5px;
 }
-.cv-section li>p {
+ul.cv-section-list-major>li>p {
   margin-left: 10px;
+}
+ul.cv-section-list-minor {
+  margin-left: -40px;
+  list-style-type: lower-roman;
+  margin-bottom: 5px;
+}
+ul.cv-section-list-minor>li {
+  padding-left: 10px;
+  font-size: 15px;
 }
 
 /* cv-left */
 #cv-left {
   width: 40%;
 }
-#cv-education li:before {
+#cv-education ul.cv-section-list-major>li:before {
   content: "\e501";
 }
-#cv-skills li:before {
+#cv-skills ul.cv-section-list-major>li:before {
   content: "\e281";
+}
+#cv-hobbies ul.cv-section-list-major>li:before {
+  content: "\e315";
 }
 
 /* cv-separator */
@@ -201,9 +219,9 @@ pre .sneaky {
 #cv-right {
   width: 52%;
 }
-#cv-experiences li:before {
-  content: "\e621";
+#cv-experiences ul.cv-section-list-major>li:before {
+  content: "\e232";
 }
-#cv-projects li:before {
-  content: "\e733";
+#cv-projects ul.cv-section-list-major>li:before {
+  content: "\e231";
 }
