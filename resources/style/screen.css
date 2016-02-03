@@ -112,7 +112,7 @@ small {
 
 /* cv-main */
 #cv-main {
-  padding: 70px 5%;
+  padding: 70px 5% 20px;
   background: #ffffff;
 }
 
@@ -160,8 +160,11 @@ ul.cv-section-list-major>li {
   display: block;
   font-size: 16px;
 }
-ul.cv-section-list-major>li:not(:last-child) {
-  margin-bottom: 25px;
+#cv-left ul.cv-section-list-major>li:not(:last-child) {
+  margin-bottom: 20px;
+}
+#cv-right ul.cv-section-list-major>li:not(:last-child) {
+  margin-bottom: 40px;
 }
 ul.cv-section-list-major>li:before {
   font-family: 'Glyphicons Regular', monospace;
@@ -224,4 +227,9 @@ ul.cv-section-list-minor>li {
 }
 #cv-projects ul.cv-section-list-major>li:before {
   content: "\e231";
+}
+
+#footer {
+  background: #fff;
+  padding-bottom: 20px;
 }
