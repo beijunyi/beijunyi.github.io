@@ -42,9 +42,36 @@
           <cv-section-title>getSkills</cv-section-title>
           <cv-section-description>My tech portfolio</cv-section-description>
           <cv-section-body>
-            <cv-piechart data="serverData" options="serverOptions"></cv-piechart>
-            <cv-piechart data="webData" options="webOptions" style="margin-top: -390px; margin-left: 3px;"></cv-piechart>
-            <cv-piechart data="othersData" options="othersOptions" style="margin-top: -396px; margin-left: -7px;"></cv-piechart>
+            <cv-piechart options="options"></cv-piechart>
+          </cv-section-body>
+        </cv-section>
+      </div>
+      <div id="cv-hobbies">
+        <cv-section>
+          <cv-section-title>getHobbies</cv-section-title>
+          <cv-section-description>Stuff that I don't do well enough to get paid for</cv-section-description>
+          <cv-section-body>
+            <ul class="cv-section-list-major">
+              <li>
+                <h4>Competitive</h4>
+                <p>
+                  <span class="badge badge-purple">Dota</span>
+                  <span class="badge badge-purple">StarCraft</span>
+                  <span class="badge badge-purple">Basketball</span>
+                  <span class="badge badge-purple">Table Tennis</span>
+                  <span class="badge badge-purple">Chess</span>
+                  <span class="badge badge-purple">Various Types of Poker Games</span>
+                </p>
+              </li>
+              <li>
+                <h4>Relaxing</h4>
+                <p>
+                  <span class="badge badge-orange">PC Modding & Overclocking</span>
+                  <span class="badge badge-orange">Website & Blog Design</span>
+                  <span class="badge badge-orange">Writing Bots for Games</span>
+                </p>
+              </li>
+            </ul>
           </cv-section-body>
         </cv-section>
       </div>
@@ -68,14 +95,13 @@
                 </p>
                 <ul class="cv-section-list-minor">
                   <li>Led many performance related refactorings</li>
-                  <li>Designed the dependency check module to verify user inputs and build integrity</li>
+                  <li>Designed the dependency check module for build integrity validation</li>
                   <li>Redesigned the analysis cache module, increased the average hit ratio from 20% to >90%</li>
                   <li>Redesigned the format transformation module, shortened the average deployment time by >90%</li>
-                  <li>Optimised the content merging module, reduced the average merge duration by >90%</li>
-                  <li>Optimised the search module, reduced the average index size usage by >80%</li>
+                  <li>Optimised the content merging module, reduced the average migration time by >90%</li>
+                  <li>Optimised the search module, reduced the average disk usage by >80%</li>
                   <li>Web interface development (AngularJS + Bootstrap)</li>
                 </ul>
-                <p><small><i>(Visit <a href="http://www.formicary.net/software/reformx">http://www.formicary.net/software/reformx</a> for more details)</i></small></p>
               </li>
               <li>
                 <h4>2012 - 2013<br/>Formicary CalMon<small> - <i>Health and performance monitoring tool for Calypso</i></small></h4>
@@ -90,7 +116,6 @@
                   <li>Optimised the search module for more accurate system log and stacktrace searching</li>
                   <li>Web interface development (ExtJS)</li>
                 </ul>
-                <p><small><i>(Visit <a href="http://www.formicary.net/software/calmon">http://www.formicary.net/software/calmon</a> for more details)</i></small></p>
               </li>
             </ul>
           </cv-section-body>
@@ -115,14 +140,14 @@
                 <p><small><i>(Visit <a href="https://www.github.com/beijunyi/parallelgit">https://www.github.com/beijunyi/parallelgit</a> for more details)</i></small></p>
               </li>
               <li>
-                <h4>2009 - 2010<br/>Archangel Online<small> - <i>Self owned MMORPG game</i></small></h4>
+                <h4>2009 - 2010<br/>Archangel Online<small> - <i>Mini-startup MMORPG game</i></small></h4>
                 <ul class="cv-section-list-minor">
                   <li>Forked from the source code of <a href="https://zh.wikipedia.org/wiki/%E7%9F%B3%E5%99%A8%E6%97%B6%E4%BB%A3_(%E6%B8%B8%E6%88%8F)">StoneAge Online</a></li>
-                  <li>Optimised the thread management component, increased maximum served players from 600 to >2000 (Intel Duo @ 2.4Ghz)</li>
+                  <li>Optimised the thread management, increased maximum served players from 600 to >2000 (Intel Duo @ 2.4Ghz)</li>
                   <li>Re-balanced the battle and reward system</li>
                   <li>Designed 2 major story lines with >30 side missions</li>
                   <li>Attracted >8000 registered accounts (average evening head count >500)</li>
-                  <li>Business acquired by <a href="http://sa.cins.cn">cins.cn</a> in 2010. The battle system and the story lines are being used today.</li>
+                  <li>Business acquired by <a href="http://sa.cins.cn">cins.cn</a> in 2010. The battle system and the story lines are still being used today.</li>
                 </ul>
               </li>
             </ul>

@@ -4,18 +4,15 @@ app.directive('cvPiechart', function() {
     template: '<div></div>',
     replace: true,
     scope: {
-      options: '=?',
-      title: '=?',
-      data: '=?'
+      options: '=?'
     },
     link: function (scope, element) {
-      scope.data = scope.data || [];
-      scope.title = scope.title || 'Untitled';
       var options = angular.merge({}, {
         credits: {
           enabled: false
         },
         chart: {
+          type: 'pie',
           backgroundColor: 'rgba(0, 0, 0, 0)',
           plotBackgroundColor: null,
           plotBorderWidth: 0,
@@ -25,11 +22,6 @@ app.directive('cvPiechart', function() {
           spacingTop: 0,
           spacingLeft: 0,
           spacingRight: 0
-        },
-        title: {
-          text: scope.title,
-          align: 'center',
-          verticalAlign: 'middle'
         },
         plotOptions: {
           pie: {
@@ -46,14 +38,7 @@ app.directive('cvPiechart', function() {
             },
             center: ['50%', '50%']
           }
-        },
-        series: [{
-          size: '100%',
-          type: 'pie',
-          name: scope.title,
-          innerSize: '40%',
-          data: scope.data
-        }]
+        }
       }, scope.options);
       Highcharts.chart(element[0], options);
     }
