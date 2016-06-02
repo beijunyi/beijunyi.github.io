@@ -201,9 +201,6 @@ ul.cv-section-list-minor>li {
 #cv-skills ul.cv-section-list-major>li:before {
   content: "\e281";
 }
-#cv-hobbies ul.cv-section-list-major>li:before {
-  content: "\e315";
-}
 
 /* cv-separator */
 #cv-separator {

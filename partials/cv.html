@@ -37,101 +37,14 @@
           </cv-section-body>
         </cv-section>
       </div>
-      <div id="cv-skills">
+      <div id="cv-skills" ng-controller="SkillsCtrl">
         <cv-section>
           <cv-section-title>getSkills</cv-section-title>
-          <cv-section-description>Tools I use</cv-section-description>
+          <cv-section-description>My tech portfolio</cv-section-description>
           <cv-section-body>
-            <ul class="cv-section-list-major">
-              <li>
-                <h4>Server Side Technologies</h4>
-                <p>
-                  <span class="badge badge-blue">Java</span>
-                  <span class="badge badge-blue">JSP</span>
-                  <span class="badge badge-blue">Spring Framework</span>
-                  <span class="badge badge-blue">Spring Security</span>
-                  <span class="badge badge-blue">Guice</span>
-                  <span class="badge badge-blue">NodeJS</span>
-                  <span class="badge badge-blue">Hibernate</span>
-                  <span class="badge badge-blue">Elasticsearch</span>
-                  <span class="badge badge-blue">RESTful</span>
-                </p>
-              </li>
-              <li>
-                <h4>Web Technologies</h4>
-                <p>
-                  <span class="badge badge-green">JavaScript</span>
-                  <span class="badge badge-green">HTML</span>
-                  <span class="badge badge-green">CSS</span>
-                  <span class="badge badge-green">AngularJS</span>
-                  <span class="badge badge-green">Bootstrap</span>
-                  <span class="badge badge-green">JQuery</span>
-                  <span class="badge badge-green">ExtJS</span>
-                </p>
-              </li>
-              <li>
-                <h4>Software Development Concepts</h4>
-                <p>
-                  <span class="badge badge-blue">Agile Programming</span>
-                  <span class="badge badge-blue">Test Driven Development</span>
-                  <span class="badge badge-blue">Reverse Engineering</span>
-                  <span class="badge badge-blue">Data Structures</span>
-                  <span class="badge badge-blue">Algorithms</span>
-                </p>
-              </li>
-              <li>
-                <h4>Tools</h4>
-                <p>
-                  <span class="badge badge-green">Git</span>
-                  <span class="badge badge-green">Maven</span>
-                  <span class="badge badge-green">MySQL</span>
-                  <span class="badge badge-green">MongoDB</span>
-                  <span class="badge badge-green">Tomcat</span>
-                  <span class="badge badge-green">Jetty</span>
-                  <span class="badge badge-green">Apache</span>
-                  <span class="badge badge-green">Windows</span>
-                  <span class="badge badge-green">Linux</span>
-                  <span class="badge badge-green">MS Paint</span>
-                </p>
-              </li>
-              <li>
-                <h4>Human Languages</h4>
-                <p>
-                  <span class="badge badge-blue">English</span>
-                  <span class="badge badge-blue">Chinese Mandarin</span>
-                  <span class="badge badge-blue">Chinese Cantonese</span>
-                </p>
-              </li>
-            </ul>
-          </cv-section-body>
-        </cv-section>
-      </div>
-      <div id="cv-hobbies">
-        <cv-section>
-          <cv-section-title>getHobbies</cv-section-title>
-          <cv-section-description>Stuff that I don't do well enough to get paid for</cv-section-description>
-          <cv-section-body>
-            <ul class="cv-section-list-major">
-              <li>
-                <h4>Competitive</h4>
-                <p>
-                  <span class="badge badge-purple">Dota</span>
-                  <span class="badge badge-purple">StarCraft</span>
-                  <span class="badge badge-purple">Basketball</span>
-                  <span class="badge badge-purple">Table Tennis</span>
-                  <span class="badge badge-purple">Chess</span>
-                  <span class="badge badge-purple">Various Types of Poker Games</span>
-                </p>
-              </li>
-              <li>
-                <h4>Relaxing</h4>
-                <p>
-                  <span class="badge badge-orange">PC Modding & Overclocking</span>
-                  <span class="badge badge-orange">Website & Blog Design</span>
-                  <span class="badge badge-orange">Writing Bots for Games</span>
-                </p>
-              </li>
-            </ul>
+            <cv-piechart data="serverData" options="serverOptions"></cv-piechart>
+            <cv-piechart data="webData" options="webOptions" style="margin-top: -390px; margin-left: 3px;"></cv-piechart>
+            <cv-piechart data="othersData" options="othersOptions" style="margin-top: -396px; margin-left: -7px;"></cv-piechart>
           </cv-section-body>
         </cv-section>
       </div>
