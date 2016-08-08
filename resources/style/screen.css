@@ -112,7 +112,7 @@ small {
 
 /* cv-main */
 #cv-main {
-  padding: 70px 5% 20px;
+  padding: 70px 50px 20px;
   background: #ffffff;
 }
 
@@ -156,6 +156,9 @@ small {
   color: #888;
   letter-spacing: -0.2px;
 }
+ul.cv-section-list-major {
+  padding-left: 30px;
+}
 ul.cv-section-list-major>li {
   display: block;
   font-size: 16px;
@@ -171,15 +174,12 @@ ul.cv-section-list-major>li:before {
   font-size: 24px;
   float: left;
   margin-top: -10px;
-  margin-left: -24px;
+  margin-left: -50px;
   color: #CCCCCC;
 }
 ul.cv-section-list-major>li>h4 {
-  margin-left: 10px;
+  margin-left: -15px;
   margin-bottom: 5px;
-}
-ul.cv-section-list-major>li>p {
-  margin-left: 10px;
 }
 ul.cv-section-list-minor {
   margin-left: -40px;
@@ -227,6 +227,14 @@ ul.cv-section-list-minor>li {
 }
 #cv-projects ul.cv-section-list-major>li:before {
   content: "\e231";
+}
+.cv-feature-tags:before {
+  content: "Features: ";
+  margin-left: -58px;
+  display: inline-block;
+  color: #888;
+  font-style: italic;
+  font-size: 14px;
 }
 
 #footer {
