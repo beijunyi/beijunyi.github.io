@@ -181,6 +181,9 @@ ul.cv-section-list-major>li>h4 {
   margin-left: -15px;
   margin-bottom: 5px;
 }
+ul.cv-section-list-major>li>h4>small {
+  font-size: 13px;
+}
 ul.cv-section-list-minor {
   margin-left: -40px;
   list-style-type: lower-roman;
@@ -229,12 +232,12 @@ ul.cv-section-list-minor>li {
   content: "\e231";
 }
 .cv-feature-tags:before {
-  content: "Features: ";
+  content: "Key Features:";
   margin-left: -58px;
   display: inline-block;
   color: #888;
   font-style: italic;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 #footer {
