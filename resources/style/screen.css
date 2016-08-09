@@ -112,7 +112,7 @@ small {
 
 /* cv-main */
 #cv-main {
-  padding: 70px 50px 20px;
+  padding: 60px 50px 20px;
   background: #ffffff;
 }
 
@@ -154,7 +154,7 @@ small {
 .cv-section-description {
   padding-left: 20px;
   color: #888;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.5px;
 }
 ul.cv-section-list-major {
   padding-left: 30px;
@@ -175,7 +175,7 @@ ul.cv-section-list-major>li:before {
   float: left;
   margin-top: -10px;
   margin-left: -50px;
-  color: #CCCCCC;
+  color: #888;
 }
 ul.cv-section-list-major>li>h4 {
   margin-left: -15px;
@@ -197,6 +197,7 @@ ul.cv-section-list-minor>li {
 /* cv-left */
 #cv-left {
   width: 40%;
+  padding-left: 20px
 }
 #cv-education ul.cv-section-list-major>li:before {
   content: "\e501";
@@ -232,7 +233,7 @@ ul.cv-section-list-minor>li {
   content: "\e231";
 }
 .cv-feature-tags:before {
-  content: "Key Features:";
+  content: "// Features:";
   margin-left: -58px;
   display: inline-block;
   color: #888;
