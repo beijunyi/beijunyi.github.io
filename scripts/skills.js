@@ -12,14 +12,15 @@ app.controller('SkillsCtrl', function($scope) {
       ['Bootstrap', 10]
     ]
   }, {
-    name: 'Exp & Vision',
+    name: 'CS Concepts',
     y: 35,
     color: '#9DCF67',
     details: [
-      ['Agile', 10],
-      ['TDD', 25],
-      ['Algo & DS', 35],
-      ['System Design', 30]
+      ['TDD', 10],
+      ['Algorithm', 30],
+      ['Data<br/>Structure', 25],
+      ['System<br/>Design', 20],
+      ['Reverse<br/>Engineering', 15]
     ]
   }, {
     name: 'Server Side',
@@ -54,6 +55,9 @@ app.controller('SkillsCtrl', function($scope) {
   $scope.portfolio = {
     title: {
       text: ''
+    },
+    tooltip: {
+      pointFormat: 'Approximate time spent <b>{point.percentage:.1f}%</b>'
     },
     series: [{
       data: majorCategories,
