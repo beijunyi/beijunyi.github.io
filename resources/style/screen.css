@@ -112,7 +112,7 @@ small {
 
 /* cv-main */
 #cv-main {
-  padding: 60px 50px 20px;
+  padding: 40px 50px 20px;
   background: #ffffff;
 }
 
@@ -126,8 +126,8 @@ small {
 
 /* cv-section */
 .cv-section {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .cv-section-brace {
   font-size: 45px;
@@ -244,4 +244,16 @@ ul.cv-section-list-minor>li {
 #footer {
   background: #fff;
   padding-bottom: 20px;
+}
+
+.cv-print-only {
+  display: none;
+}
+
+.printer-view .cv-screen-only {
+  display: none !important;
+}
+
+.printer-view .cv-print-only {
+  display: inherit !important;
 }

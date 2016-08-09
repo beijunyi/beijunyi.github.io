@@ -14,3 +14,11 @@ body {
 #cv-nav {
   display: none;
 }
+
+.cv-screen-only {
+  display: none !important;
+}
+
+.cv-print-only {
+  display: inherit !important;
+}
