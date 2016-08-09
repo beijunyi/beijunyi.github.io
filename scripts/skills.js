@@ -27,11 +27,11 @@ app.controller('SkillsCtrl', function($scope) {
     y: 40,
     color: '#6795B5',
     details: [
-      ['Java', 35],
-      ['Elasticsearch', 25],
-      ['Spring', 22],
       ['Hibernate', 10],
-      ['SQL', 8]
+      ['MongoDB', 8],
+      ['Java', 40],
+      ['Elasticsearch', 20],
+      ['Spring<br/>Framework', 22]
     ]
   }];
   var majorCategories = [];
