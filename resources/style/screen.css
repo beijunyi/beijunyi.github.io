@@ -68,39 +68,9 @@ small {
 
 
 /* navbar */
-.navbar-fixed-top {
+.navbar-static-top {
   border: 0;
-  transition: all 0.2s linear;
-}
-.printer-view .navbar-fixed-top {
-  margin-top: -50px;
-  opacity: 0;
-}
-.printer-view .nav-show .navbar-fixed-top {
-  margin-top: 0;
-  opacity: 0.85;
-}
-#nav-placeholder {
-  width: 100%;
-  height: 50px;
-  transition: height 0.2s linear;
-}
-.printer-view #nav-placeholder {
-  height: 0;
-}
-#nav-detect-enter {
-  top: 0;
-  position: fixed;
-  width: 100%;
-  height: 50px;
-  display: none;
-}
-.printer-view #nav-detect-enter {
-  display: block;
-}
-.printer-view #cv-printer-view {
-  color: #fff;
-  background-color: #080808;
+  margin-bottom: 0;
 }
 .navbar .glyphicons {
   font-size: 30px;
@@ -110,9 +80,16 @@ small {
   cursor: pointer;
 }
 
-/* cv-main */
-#cv-main {
-  padding: 40px 50px 20px;
+#cv-container {
+  height: 1560px;
+}
+#cv-container ng-view {
+  height: 100%;
+}
+
+#cv-container ng-view>div {
+  height: 100%;
+  padding: 40px 50px 0;
   background: #ffffff;
 }
 
@@ -248,12 +225,4 @@ ul.cv-section-list-minor>li {
 
 .cv-print-only {
   display: none;
-}
-
-.printer-view .cv-screen-only {
-  display: none !important;
-}
-
-.printer-view .cv-print-only {
-  display: inherit !important;
 }

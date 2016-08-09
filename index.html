@@ -12,10 +12,10 @@
   <link rel="stylesheet" type="text/css" media="print" href="resources/style/print.css">
 </head>
 
-<body ng-app="cv" ng-cloak ng-class="{'printer-view': printerView}" ng-controller="AppCtrl">
+<body ng-app="cv" ng-cloak ng-controller="AppCtrl">
   <ng-include src="'partials/nav.html'"></ng-include>
-  <div class="container">
-    <ng-view id="cv-view"></ng-view>
+  <div id="cv-container" class="container">
+    <ng-view></ng-view>
     <div id="footer" class="text-center">
       <span class="cv-screen-only">This page is printer friendly. Click <a ng-click="print()">here</a> to print this page or convert it to PDF</span>
       <span class="cv-print-only">Please visit <a href="https://beijunyi.github.io">https://beijunyi.github.io</a> for the latest version</span>

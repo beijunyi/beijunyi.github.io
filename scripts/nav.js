@@ -18,6 +18,7 @@ app.config(function($routeProvider) {
 app.controller('NavCtrl', function($scope, $route, $location, PrinterService) {
 
   $scope.pages = [];
+  $scope.print = print;
   angular.forEach($route.routes, function(route, path) {
     if(route.name != null) {
       $scope.pages.push(angular.extend({
@@ -31,17 +32,8 @@ app.controller('NavCtrl', function($scope, $route, $location, PrinterService) {
     }
   });
 
-  $scope.hoverNavZone = false;
-  $scope.togglePrinterVersion = function() {
-    $scope.hoverNavZone = false;
-    var state = !PrinterService.isPrinterView();
-    PrinterService.print(state);
-  };
-  $scope.enterNavZone = function() {
-    $scope.hoverNavZone = true;
-  };
-  $scope.leaveNavZone = function() {
-    $scope.hoverNavZone = false;
-  };
-
+  function print() {
+    PrinterService.print();
+  }
+  
 });

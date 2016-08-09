@@ -1,5 +1,5 @@
-<div id="cv-nav" ng-class="{'nav-show': hoverNavZone}" ng-controller="NavCtrl">
-  <nav class="navbar navbar-inverse navbar-fixed-top" ng-mouseover="enterNavZone()" ng-mouseleave="leaveNavZone()">
+<div id="cv-nav" ng-controller="NavCtrl">
+  <nav class="navbar navbar-inverse navbar-static-top">
     <div class="container">
       <ul class="nav navbar-nav">
         <li ng-repeat="page in pages" ng-class="{active: page.isActive()}">
@@ -14,7 +14,7 @@
 
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <a ng-click="togglePrinterVersion()" id="cv-printer-view">
+          <a ng-click="print()">
             <span class="glyphicons glyphicons-print"></span>
             Print me
           </a>
@@ -22,6 +22,4 @@
       </ul>
     </div>
   </nav>
-  <div id="nav-placeholder"></div>
-  <div id="nav-detect-enter" ng-mouseenter="enterNavZone()"></div>
 </div>
