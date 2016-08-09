@@ -51,7 +51,7 @@ app.controller('SkillsCtrl', function($scope) {
     });
   });
 
-  $scope.options = {
+  $scope.portfolio = {
     title: {
       text: ''
     },
