@@ -221,6 +221,7 @@ ul.cv-section-list-minor>li {
 }
 
 #footer {
+  white-space: nowrap;
   background: #fff;
   padding-bottom: 10px;
 }
