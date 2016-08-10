@@ -131,7 +131,7 @@ small {
 .cv-section-description {
   padding-left: 20px;
   color: #888;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.4px;
 }
 ul.cv-section-list-major {
   padding-left: 30px;
@@ -220,7 +220,7 @@ ul.cv-section-list-minor>li {
 
 #footer {
   background: #fff;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .cv-print-only {
