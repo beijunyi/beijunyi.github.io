@@ -57,7 +57,7 @@ app.controller('SkillsCtrl', function($scope) {
       text: ''
     },
     tooltip: {
-      pointFormat: 'Approximate time spent <b>{point.percentage:.1f}%</b>'
+      pointFormat: 'Contribution to total value: <b>{point.percentage:.1f}%</b>'
     },
     series: [{
       data: majorCategories,
