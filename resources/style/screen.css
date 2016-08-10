@@ -80,8 +80,8 @@ small {
   cursor: pointer;
 }
 
-#cv-container ng-view>div {
-  height: 1580px;
+#cv-container div[ng-view]>div {
+  min-height: 1580px;
   padding: 40px 50px 0;
   background: #ffffff;
 }
@@ -128,8 +128,6 @@ small {
 }
 ul.cv-section-list-major {
   padding-left: 30px;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 ul.cv-section-list-major>li {
   display: block;
