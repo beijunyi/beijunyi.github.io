@@ -2,13 +2,13 @@ app.config(function($routeProvider) {
   $routeProvider
     .when('/', {
       templateUrl: 'partials/cv.html',
-      name: 'About me',
-      icon: 'person-running'
+      name: 'Resume',
+      icon: 'pie-chart'
     })
     .when('/projects', {
-      templateUrl: 'partials/projects.html',
-      name: 'Projects',
-      icon: 'claw-hammer'
+      templateUrl: 'partials/change-logs.html',
+      name: 'Change logs',
+      icon: 'list-alt'
     })
     .otherwise({
       redirectTo: '/'
