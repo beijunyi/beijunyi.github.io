@@ -81,7 +81,7 @@ small {
 }
 
 #cv-container div[ng-view]>div {
-  min-height: 1580px;
+  min-height: 1560px;
   padding: 40px 50px 0;
   background: #ffffff;
 }
