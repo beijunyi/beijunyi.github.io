@@ -49,6 +49,9 @@ small {
 .mono {
   font-family: Consolas, monospace;
 }
+.badge {
+  font-size: 11px;
+}
 .badge-blue {
   background-color: #D8E6EB;
   color: #6A97A6;
@@ -137,7 +140,7 @@ ul.cv-section-list-major>li {
   margin-bottom: 20px;
 }
 #cv-right ul.cv-section-list-major>li:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 ul.cv-section-list-major>li:before {
   font-family: 'Glyphicons Regular', monospace;
@@ -156,7 +159,8 @@ ul.cv-section-list-major>li>h4>small {
 }
 ul.cv-section-list-minor {
   margin-left: -40px;
-  list-style-type: lower-roman;
+  margin-right: -10px;
+  list-style-type: disc;
   margin-bottom: 5px;
 }
 ul.cv-section-list-minor>li {

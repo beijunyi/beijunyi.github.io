@@ -6,32 +6,32 @@ app.controller('SkillsCtrl', function($scope) {
     color: '#EB795C',
     details: [
       ['HTML', 15],
-      ['JavaScript', 30],
-      ['AngularJS', 35],
       ['CSS', 10],
+      ['JavaScript', 25],
+      ['Angular', 20],
+      ['ReactJS', 20],
       ['Bootstrap', 10]
     ]
   }, {
-    name: 'CS Concepts',
+    name: 'Database',
     y: 35,
     color: '#9DCF67',
     details: [
-      ['TDD', 10],
-      ['Algorithm', 30],
-      ['Data<br/>Structure', 25],
-      ['System<br/>Design', 20],
-      ['Reverse<br/>Engineering', 15]
+      ['MySQL', 10],
+      ['Cassandra', 30],
+      ['InfluxDB', 25],
+      ['MongoDB', 20],
+      ['Hive', 15]
     ]
   }, {
-    name: 'Server Side',
+    name: 'Server End',
     y: 40,
     color: '#6795B5',
     details: [
-      ['Hibernate', 10],
-      ['MongoDB', 8],
+      ['Python', 18],
+      ['PHP', 18],
       ['Java', 40],
-      ['Elasticsearch', 20],
-      ['Spring<br/>Framework', 22]
+      ['Spring<br/>Framework', 24]
     ]
   }];
   var majorCategories = [];
