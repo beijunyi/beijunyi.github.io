@@ -203,7 +203,7 @@ ul.cv-section-list-minor>li {
   content: "\e231";
 }
 .cv-feature-tags:before {
-  content: "// Features:";
+  content: "// Highlights:";
   margin-left: -58px;
   display: inline-block;
   color: #888;
